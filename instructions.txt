@@ -1,0 +1,7 @@
+Fractal Cube World:
+- You are in a recursive world of cubes.
+- Each block can be "Split" by clicking it.
+- Once split, click it again to "Shrink" and enter it.
+- The world inside is a 16x16x16 grid of more cubes.
+- Walls are solid and perfectly aligned to prevent gaps.
+- Use WASD on desktop to move, and the joystick on mobile.

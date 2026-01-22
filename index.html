@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Fractal Cube World</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000; font-family: sans-serif; }
+        canvas { display: block; }
+
+        /* Centered top banner for clear controls info */
+        #controls-banner {
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            padding: 8px 14px;
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.2;
+            pointer-events: none;
+            z-index: 50;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.9);
+            max-width: calc(100% - 40px);
+            box-sizing: border-box;
+        }
+
+        /* Smaller supplemental UI on the left for depth and actions */
+        #ui {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            color: white;
+            pointer-events: none;
+            text-shadow: 1px 1px 2px black;
+            z-index: 20;
+        }
+        #crosshair {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+        #joystick-container {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            width: 120px;
+            height: 120px;
+            z-index: 10;
+        }
+        #waypoint-btn {
+            position: absolute;
+            top: 30000px;
+            left: 0px;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            pointer-events: auto;
+            backdrop-filter: blur(5px);
+        }
+        #waypoint-menu {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.9);
+            border: 2px solid #555;
+            padding: 20px;
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 100;
+            min-width: 200px;
+            pointer-events: auto;
+        }
+        #waypoint-list {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+        .wp-item {
+            padding: 10px;
+            background: #222;
+            border: 1px solid #444;
+            cursor: pointer;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        .wp-item:hover { background: #333; }
+        .close-btn { align-self: flex-end; color: #aaa; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <div id="ui">
+        <div id="depth-indicator">Depth: 0</div>
+        <button id="waypoint-btn">Waypoints</button>
+    </div>
+
+    <div id="waypoint-menu">
+        <span class="close-btn" id="close-wp">✕ Close</span>
+        <h3 style="color:white; margin-top:0;">Fast Travel</h3>
+        <div id="waypoint-list"></div>
+        <button id="set-wp-btn" style="padding:10px; background:#444; color:white; border:none; cursor:pointer;">Set Waypoint Here</button>
+    </div>
+
+    <div id="crosshair"></div>
+    <div id="joystick-container"></div>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://esm.sh/three@0.160.0",
+            "three/addons/": "https://esm.sh/three@0.160.0/examples/jsm/",
+            "nipplejs": "https://esm.sh/nipplejs@0.10.1"
+        }
+    }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
