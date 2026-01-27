@@ -178,7 +178,7 @@ function onGrow() {
         document.getElementById('depth-indicator').innerText = `Depth: ${state.currentLayer}`;
     }
 
-    autoSplitting();
+    autoUnsplitFarBlocks();
 }
 
 function enterGrid(childGrid) {
@@ -213,9 +213,9 @@ function enterGrid(childGrid) {
     playSound('enter');
     document.getElementById('depth-indicator').innerText = `Depth: ${state.currentLayer}`;
 
-    setTimeout(() => { state.isTransitioning = false; }, 200);
+    autoSplitNearbyBlocks();
 
-    autoSplitting();
+    setTimeout(() => { state.isTransitioning = false; }, 200);
 }
 
 function onInteract() {
@@ -321,8 +321,9 @@ function autoSplitNearbyBlocks() {
                 if (_worldPos.distanceToSquared(_camPos) <= splitDistSq) {
                     grid.splitBlock(i);
                     step++;
-                    if (step > 100) return;
                 }
+
+                if (step > 5) return;
             }
         }
     }
@@ -370,11 +371,6 @@ function autoUnsplitFarBlocks() {
             }
         }
     }
-}
-
-function autoSplitting() {
-    autoSplitNearbyBlocks();
-    autoUnsplitFarBlocks();
 }
 
 function animate() {
@@ -427,10 +423,11 @@ function animate() {
         }
     }
     
-    if (lastPos.distanceToSquared(camera.position) > GRID_SIZE * BLOCK_SIZE / 8) {
+    /*if (lastPos.distanceToSquared(camera.position) > GRID_SIZE * BLOCK_SIZE) {
         lastPos = new THREE.Vector3(camera.position.x, camera.position.y, camera.position.z);
-        autoSplitting();
-    }
+        
+    }*/
+    autoSplitNearbyBlocks();
 
     updateCollectibles(time);
     renderer.render(scene, camera);

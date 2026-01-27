@@ -62,8 +62,7 @@
               "RelativeToolTip": "config.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-01-22T06:07:25.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-22T06:07:25.84Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "state.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-01-22T02:52:45.459Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-22T02:52:45.459Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "collectibles.js",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwCwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-01-21T23:33:20.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-21T23:33:20.636Z"
             },
             {
               "$type": "Document",
@@ -101,8 +98,7 @@
               "RelativeToolTip": "controls.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-01-21T23:24:19.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-21T23:24:19.789Z"
             },
             {
               "$type": "Document",
@@ -114,8 +110,7 @@
               "RelativeToolTip": "physics.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-01-21T23:00:59.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-21T23:00:59.39Z"
             },
             {
               "$type": "Document",
@@ -127,8 +122,7 @@
               "RelativeToolTip": "noise.js",
               "ViewState": "AgIAACgAAAAAAAAAAAAcwDoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-01-21T22:52:14.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-21T22:52:14.312Z"
             },
             {
               "$type": "Document",
@@ -138,7 +132,7 @@
               "RelativeDocumentMoniker": "main.js",
               "ToolTip": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\main.js",
               "RelativeToolTip": "main.js",
-              "ViewState": "AgIAACEBAAAAAAAAAAAAwD0BAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAAAYwE4BAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-01-21T22:48:17.098Z",
               "EditorCaption": ""
@@ -153,8 +147,7 @@
               "RelativeToolTip": "world.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-01-21T22:48:09.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-21T22:48:09.925Z"
             },
             {
               "$type": "Document",
@@ -166,8 +159,7 @@
               "RelativeToolTip": "index.html",
               "ViewState": "AgIAAEgAAAAAAAAAAAAAACEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-01-21T22:48:30.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-21T22:48:30.626Z"
             }
           ]
         }
