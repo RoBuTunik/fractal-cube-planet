@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\world.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:world.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\noise.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:noise.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -25,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\state.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:state.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\noise.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:noise.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\world.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:world.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\physics.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "config.js",
               "DocumentMoniker": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\config.js",
               "RelativeDocumentMoniker": "config.js",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "state.js",
               "DocumentMoniker": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\state.js",
               "RelativeDocumentMoniker": "state.js",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "collectibles.js",
               "DocumentMoniker": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\collectibles.js",
               "RelativeDocumentMoniker": "collectibles.js",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "controls.js",
               "DocumentMoniker": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\controls.js",
               "RelativeDocumentMoniker": "controls.js",
@@ -114,15 +114,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "noise.js",
               "DocumentMoniker": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\noise.js",
               "RelativeDocumentMoniker": "noise.js",
               "ToolTip": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\noise.js",
               "RelativeToolTip": "noise.js",
-              "ViewState": "AgIAACgAAAAAAAAAAAAcwDoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwEUAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-01-21T22:52:14.312Z"
+              "WhenOpened": "2026-01-21T22:52:14.312Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -132,26 +133,27 @@
               "RelativeDocumentMoniker": "main.js",
               "ToolTip": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\main.js",
               "RelativeToolTip": "main.js",
-              "ViewState": "AgIAALUAAAAAAAAAAAAYwE4BAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABwBAAAAAAAAAAAuwDYBAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-01-21T22:48:17.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "world.js",
               "DocumentMoniker": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\world.js",
               "RelativeDocumentMoniker": "world.js",
               "ToolTip": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\world.js",
               "RelativeToolTip": "world.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwCAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-01-21T22:48:09.925Z"
+              "WhenOpened": "2026-01-21T22:48:09.925Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\RoBuT\\Documents\\GitHub\\fractal-cube-planet\\index.html",
               "RelativeDocumentMoniker": "index.html",

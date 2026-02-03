@@ -30,6 +30,7 @@ export const materials = {
     vines: createTexture('blockVines.png'),
     rubble: createTexture('blockRubble.png'),
     sponge: createTexture('blockSponge.png'),
+    yellow: createTexture('blockYellow.png'),
     waypoint: createTexture('waypoint.png'),
 };
 
@@ -88,6 +89,50 @@ export const BLOCK_DATA = [
         isHitbox: true,
         splitFrom: 8,
     },
+
+    { //10 - Rubble
+        solid: true,
+        splits: true,
+        hitbox: 11,
+    },
+
+    { //11 - Rubble hitbox
+        isHitbox: true,
+        splitFrom: 10,
+    },
+
+    { //12 - Solid
+        solid: true,
+        splits: true,
+        hitbox: 13,
+    },
+
+    { //13 - Solid hitbox
+        isHitbox: true,
+        splitFrom: 12,
+    },
+
+    { //14 - Blocky Air
+        solid: false,
+        splits: true,
+        hitbox: 15,
+    },
+
+    { //15 - Blocky Air hitbox
+        isHitbox: true,
+        splitFrom: 14,
+    },
+
+    { //16 - Cluster
+        solid: true,
+        splits: true,
+        hitbox: 17,
+    },
+
+    { //17 - Cluster hitbox
+        isHitbox: true,
+        splitFrom: 16,
+    },
 ];
 
 export class WorldGrid {
@@ -109,6 +154,7 @@ export class WorldGrid {
             vines: newBlock(materials.vines, this),
             sponge: newBlock(materials.sponge, this),
             waypoint: newBlock(materials.waypoint, this),
+            rubble: newBlock(materials.rubble, this),
             hitbox: newBlock(hitboxMaterial, this),
         };
 
@@ -123,6 +169,12 @@ export class WorldGrid {
             this.instances.hitbox, //7
             this.instances.sponge, //8
             this.instances.hitbox, //9
+            this.instances.rubble, //10
+            this.instances.hitbox, //11
+            this.instances.default, //12
+            this.instances.hitbox, //13
+            this.instances.hitbox, //14
+            this.instances.hitbox, //15
         ];
         
         this.matrix = new THREE.Matrix4();

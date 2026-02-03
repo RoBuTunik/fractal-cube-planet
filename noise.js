@@ -42,6 +42,12 @@ export function isSolidAt(gx, gy, gz, depth, gridSeed, offset, type) {
         ) {
             return 0;
         } else return 8;
+    } else if (type === 10) {
+        return Math.random() > 0.4 ? 0 : 10;
+    } else if (type === 12) {
+        return 12;
+    } else if (type === 14) {
+        return Math.random() > 0.99 ? 1 : 0;
     }
 
     const lx = offset.x + gx * offset.s;
@@ -59,7 +65,11 @@ export function isSolidAt(gx, gy, gz, depth, gridSeed, offset, type) {
     }
 
     const isShell = gx === 0 || gx === GRID_SIZE - 1 || gy === 0 || gy === GRID_SIZE - 1 || gz === 0 || gz === GRID_SIZE - 1;
-    
+
+    let block = Math.random() > 0.95 ? 10 : 1;
+    //if (Math.random() > 0.95) block = 12;
+    let air = Math.random() > 0.95 ? 14 : 0;
+
     // Door/Corridor logic for every side (using 2x2 openings)
     const mid = Math.floor(GRID_SIZE / 2);
     const isDoor = 
@@ -68,10 +78,10 @@ export function isSolidAt(gx, gy, gz, depth, gridSeed, offset, type) {
         ((gy === mid || gy === mid - 1) && (gz === mid || gz === mid - 1));
 
     // The shell has doors
-    if (isShell) return isDoor ? 0 : 1;
+    if (isShell) return isDoor ? air : block;
     
     // Carve out corridors between doors to ensure the "split form" is always navigable
-    if (isDoor) return 0;
+    if (isDoor) return air;
 
     if (isTowerColumn) {
         return Math.random() > 0.9 ? 6 : 3
@@ -81,8 +91,8 @@ export function isSolidAt(gx, gy, gz, depth, gridSeed, offset, type) {
     const dx = gx - (mid - 0.5);
     const dy = gy - (mid - 0.5);
     const dz = gz - (mid - 0.5);
-    if (dx*dx + dy*dy + dz*dz < 12) return 0;
+    if (dx * dx + dy * dy + dz * dz < 12) return air;
     
     // Normalize to 0-1 range and use a threshold that favors "air" (empty space)
-    return noise > 0.58 ? 1 : 0; 
+    return noise > 0.58 ? block : air; 
 }
